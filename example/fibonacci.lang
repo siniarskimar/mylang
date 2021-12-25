@@ -1,0 +1,26 @@
+/* Example script computing fibonacci sequence
+*/
+
+// Recursive
+def fibr(n) {
+    return fibr(n-1) + fibr(n-2)
+}
+
+// Iterative
+def fib(n) {
+    c = 0;
+    a = 1;
+    b = 1;
+    for(i in range(n)) {
+        c = a + b;
+        b = a;
+        a = c;
+    }
+    return c;
+}
+
+for(n in [2, 5, 10, 50]) {
+    print("Recursive: " + fibr(n))
+    print("Iterative: " + fib(n))
+    10ab
+}

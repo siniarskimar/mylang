@@ -1,0 +1,8 @@
+/* Example showcasting identifier shadowing
+*/
+
+a = 10
+
+def func(func) {
+    func() // argument is called
+}
